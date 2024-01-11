@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/styles/style.css">
   <title>Elisabeth</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="#sobre_mim" >Sobre mim</a>
+  <header class="header">
+    <nav class="nav">
+      <a href="#sobre_mim">Sobre mim</a>
       <a href="curriculo.html">Meu currículo</a>
       <a href="#projetos">Meus projetos</a>
     </nav>
   </header>
-  <main>
-    <div>
-      <section id="sobre_mim">
-        <img src="./assets/elisabeth.png" alt="Imagem da pessoa que desenvolveu o código">
-      </section>
-      <section>
-        <h3>Sobre Mim</h3>
-        <p>Meu nome é Elisabeth, tenho 25 anos, moro no interior de São Paulo em Nazaré Paulista sou graduada em Gestão da Tecnologia da Informação pela Fatec de Bragança Paulista e 
-          logo após que me formei comecei a cursar Análise e Desenvolvimento de Sistemas pelo Instituto Federal cheguei a cursar 3 semestres, porém precisei trancar. 
-          Desde pequena gostava de desmontar e montar as coisas e em pensar como isso funcionava. 
+  <main class="container">
+    <div class="content" id="sobre_mim">
+      <section class="content__about-me">
+        <h2 class="content-text">Sobre Mim</h2>
+        <p class="content__about-me-text">Meu nome é Elisabeth, tenho 25 anos, moro no interior de São Paulo em Nazaré
+          Paulista sou graduada em Gestão da Tecnologia da Informação pela Fatec de Bragança Paulista e
+          logo após que me formei comecei a cursar Análise e Desenvolvimento de Sistemas pelo Instituto Federal cheguei
+          a cursar 3 semestres, porém precisei trancar.
+          <br>Desde pequena gostava de desmontar e montar as coisas e em pensar como isso funcionava.
           E gostava de jogar jogos e isso acabou me influenciando ainda mais a seguir na área da tecnologia.
-          Tenho experiência como Desenvolvedora Front End Júnior, onde fiz parte na construção de uma plataforma de gestão de pessoas, também desenvolvi um sistema de gerenciamento de contatos e pessoas. 
-          Atualmente estou participando de um bootcamp da Generation para me tornar uma Desenvolvedora Full Stack, o curso possui uma carga horária de mais de 300 horas.
+          Tenho experiência como Desenvolvedora Front End Júnior, onde fiz parte na construção de uma plataforma de
+          gestão de pessoas, também desenvolvi um sistema de gerenciamento de contatos e pessoas.
+          Atualmente estou participando de um bootcamp da Generation para me tornar uma Desenvolvedora Full Stack, o
+          curso possui uma carga horária de mais de 300 horas.
           E nesse bootcamp tive a oportunidade de conhecer o back-end e desenvolver alguns projetos.
-          Muito obrigada pela atenção.</p>
+          Muito obrigada pela atenção.
+        </p>
+      </section>
+      <section class="content__img">
+        <img src="./src/assets/elisabeth.png" alt="Imagem da pessoa que desenvolveu o código" class="avatar">
       </section>
     </div>
-    <section id="projetos">
-      <h3>Meus projetos</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure provident asperiores eligendi eos cumque voluptatem fugiat veniam, nisi vero aut impedit dolores rerum quibusdam adipisci laboriosam pariatur natus dicta nulla!</p>
-      <div>
-        <div>
-          <img src="./assets/projeto-consultorio.png" alt="" width="400px">
-          <h3>Consultório Médico</h3>
-          <p>Esse projeto foi desenvolvido para a entrevista técnica utilizando ReactJS, e realizado o responsivo. Esse projeto é para agendamento de uma consulta médica, possibilitando marcar o horário e o médico que irá atender.</p>
-          <div>
-            <a href="">Demonstração</a>
-            <a href="">Link para o GitHub</a>
+    <section id="projetos" class="container-my-project">
+      <h2 class="content-text">Meus projetos</h2>
+      <p class="content-p">Explore minha coleção de projetos no GitHub!!! Sinta-se à vontade para contribuir, fornecer
+        feedback ou simplesmente explorar o código-fonte! <br>Obrigado por visitar!!</p>
+      <div class="content__my-project">
+        <div class="content__my-project-card">
+          <img src="./src/assets/projeto-consultorio.png" alt="Pré-visualização do Projeto Consultório" class="img">
+          <h3 class="content__my-project-card-title">Consultório Médico</h3>
+          <p>Esse projeto foi desenvolvido para uma entrevista técnica utilizando ReactJS, e realizado o responsivo.</p>
+          <div class="container-link">
+            <a href="https://github.com/bettyap/consultorio_medico" class="link-git">Link para o GitHub</a>
+            <a href="https://consultorio-medico.netlify.app/" class="link-demo">Demonstração</a>
           </div>
         </div>
-        <div>
-          <img src="./assets/projeto-github-explore.png" alt="" width="400px">
-          <h3>Github Explore</h3>
+        <div class="content__my-project-card">
+          <img src="./src/assets/projeto-github-explore.png" alt="Pré-visualização do Projeto Github" class="img">
+          <h3 class="content__my-project-card-title">Github Explore</h3>
           <p>Esse projeto foi desenvolvido utilizando o React, para buscar repositórios existentes.</p>
-          <div>
-            <a href="">Demonstração</a>
-            <a href="">Link para o GitHub</a>
+          <div class="container-link">
+            <a href="https://github.com/bettyap/github-explorer" class="link-git">Link para o GitHub</a>
+            <a href="https://kind-ramanujan-86d390.netlify.app/" class="link-demo">Demonstração</a>
           </div>
         </div>
-        <div>
-          <img src="./assets/projeto-forca.png" alt="" width="400px">
-          <h3>Jogo da Forca</h3>
+        <div class="content__my-project-card">
+          <img src="./src/assets/projeto-forca.png" alt="Pré-visualização do Projeto Jogo da Forca" class="img">
+          <h3 class="content__my-project-card-title">Jogo da Forca</h3>
           <p>Esse projeto foi desenvolvido para fins de estudos do VueJS.</p>
-          <div>
-            <a href="">Demonstração</a>
-            <a href="">Link para o GitHub</a>
+          <div class="container-link">
+            <a href="https://github.com/bettyap/jogo-da-forca" class="link-git">Link para o GitHub</a>
+            <a href="https://jogo-da-forca-vuejs.netlify.app/" class="link-demo">Demonstração</a>
           </div>
         </div>
-        <div>
-          <img src="./assets/projeto-conta-bancaria.png" alt="" width="400px">
-          <h3>Conta Bancária</h3>
-          <p>
-            Esse projeto foi desenvolvido junto com o curso do bootcamp na linguagem de programação Java, 
+        <div class="content__my-project-card">
+          <img src="./src/assets/projeto-agenda-pessoal.png" alt="Pré-visualização do Projeto Agenda Pessoal" class="img">
+          <h3 class="content__my-project-card-title">Agenda Pessoal</h3>
+          <p>Projeto desenvolvido para uma entrevista técnica utilizando VueJS, e realizado o responsivo.</p>
+          <div class="container-link">
+            <a href="https://github.com/bettyap/agenda_pessoal" class="link-git">Link para o GitHub</a>
+            <a href="https://agenda-pessoal.netlify.app/meu-cadastro" class="link-demo">Demonstração</a>
+          </div>
+        </div>
+        <div class="content__my-project-card">
+          <img src="./src/assets/projeto-conta-bancaria.png" alt="Pré-visualização do Projeto Conta Bancária" class="img img-account">
+          <h3 class="content__my-project-card-title">Conta Bancária</h3>
+          <p>Esse projeto foi desenvolvido junto com o curso do bootcamp na linguagem de programação Java,
             para estudos e fixação dos conteúdos abordados. Implementado o CRUD na aplicação.</p>
-          <div>
-            <a href="">Link para o GitHub</a>
+          <div class="container-link">
+            <a href="https://github.com/bettyap/conta_bancaria" class="link-git">Link para o GitHub</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer> 
+  <footer class="footer">
     <p>© COPYRIGHT 2024 Desenvolvido por Elisabeth Aparecida</p>
   </footer>
 </body>
+
 </html>
