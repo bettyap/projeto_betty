@@ -14,6 +14,7 @@
       <a href="#sobre_mim">Sobre mim</a>
       <a href="curriculo.html">Meu currículo</a>
       <a href="#projetos">Meus projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
   <main class="container">
@@ -71,7 +72,8 @@
           </div>
         </div>
         <div class="content__my-project-card">
-          <img src="./src/assets/projeto-agenda-pessoal.png" alt="Pré-visualização do Projeto Agenda Pessoal" class="img">
+          <img src="./src/assets/projeto-agenda-pessoal.png" alt="Pré-visualização do Projeto Agenda Pessoal"
+            class="img">
           <h3 class="content__my-project-card-title">Agenda Pessoal</h3>
           <p>Projeto desenvolvido para uma entrevista técnica utilizando VueJS, e realizado o responsivo.</p>
           <div class="container-link">
@@ -80,7 +82,8 @@
           </div>
         </div>
         <div class="content__my-project-card">
-          <img src="./src/assets/projeto-conta-bancaria.png" alt="Pré-visualização do Projeto Conta Bancária" class="img img-account">
+          <img src="./src/assets/projeto-conta-bancaria.png" alt="Pré-visualização do Projeto Conta Bancária"
+            class="img img-account">
           <h3 class="content__my-project-card-title">Conta Bancária</h3>
           <p>Esse projeto foi desenvolvido junto com o curso do bootcamp na linguagem de programação Java,
             para estudos e fixação dos conteúdos abordados. Implementado o CRUD na aplicação.</p>
@@ -90,10 +93,41 @@
         </div>
       </div>
     </section>
+    <section class="conteudo-form"><a id="contato"></a>
+      <div class="conteudo-form-div">
+        <h2 class="content-text">Contato</h2>
+        <form>
+          <label class="form-label" for="nome">Nome</label>
+          <input type="text" id="nome" class="input-form" required placeholder="Nome" onkeyup="validaNome()">
+          <div id="txtNome"></div>
+
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" class="input-form" required placeholder="seuemail@dominio.com" onkeyup="validaEmail()">
+          <div id="txtEmail"></div>
+
+          <label class="form-label" for="telefone">Telefone</label>
+          <input type="tel" id="telefone" class="input-form" required onkeydown="return mascaraTelefone(event)" placeholder="(xx) xxxxx-xxxx">
+
+          <label class="form-label" for="assunto">Assunto</label>
+          <textarea id="assunto" class="input-form" cols="70" rows="10" required
+            placeholder="Escreva sua mensagem...." onkeyup="validaAssunto()"></textarea>
+          <div id="txtAssunto"></div>
+
+          <div class="conteudo-form-button">
+            <button class="enviar" onclick="enviar()">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div>
+        Redes Sociais
+      </div> -->
+    </section>
   </main>
   <footer class="footer">
     <p>© COPYRIGHT 2024 Desenvolvido por Elisabeth Aparecida</p>
   </footer>
+
+  <script src="/src/js/script.js"></script>
 </body>
 
 </html>

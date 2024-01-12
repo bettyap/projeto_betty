@@ -175,6 +175,68 @@ main {
   background: var(--blue-200);
 }
 
+/*Form*/
+
+.conteudo-form-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.titulo-h1{
+  color:white;
+  /* margin-bottom: 40px; */
+}
+
+.form-label {
+  display:block;
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.input-form{
+  display:block;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 20px;
+  border:none;
+  resize: none;
+  background: #27272a;
+  color: white;
+}
+
+.input-form:focus {
+  outline: 2px solid var(--blue-200);
+}
+
+.enviar{
+  width:20%;
+  padding: 15px 0;
+  background: var(--blue-400);
+  border-radius: 15px;
+  border:none;
+  cursor:pointer;,
+  font-weight: bold;
+  font-size:18px;
+  color: white;
+  transition: 1s ;
+}
+
+.enviar:hover{
+  background: var(--blue-200);
+}
+
+.conteudo-form-button{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .footer {
   background: var(--blue-200);
   display: flex;
